@@ -1,6 +1,6 @@
 select
     id as payment_id,
     orderid,
-    amount
+    amount,status
 
 from raw.stripe.payment
