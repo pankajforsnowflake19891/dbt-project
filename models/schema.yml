@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: hub_customer
+  - name: hub_customer_dv
     description: One record per customer
     columns:
       - name: customer_hk
@@ -10,7 +10,7 @@ models:
           - unique
           - not_null
   
-  - name: sat_customer
+  - name: sat_customer_dv
     description: One record per customer
     columns:
       - name: customer_hk
