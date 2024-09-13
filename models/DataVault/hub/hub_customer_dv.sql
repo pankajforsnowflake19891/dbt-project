@@ -1,6 +1,6 @@
-{%- set source_model = "hub_customer" -%}
-{%- set src_pk = "customer_hk" -%}
-{%- set src_nk = "customer_id" -%}
+{%- set source_model = "stg_customers_dv" -%}
+{%- set src_pk = "customer_id" -%}
+{%- set src_nk = "customer_name" -%}
 {%- set src_ldts = "load_dts" -%}
 {%- set src_source = "source" -%}
 
