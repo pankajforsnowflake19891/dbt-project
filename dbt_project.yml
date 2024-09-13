@@ -44,4 +44,5 @@ models:
 
 vars:
   load_date: '1992-01-08'
+  source: 'RAW'
 

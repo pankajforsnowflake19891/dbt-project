@@ -2,7 +2,6 @@
 source_model: 'stg_customers'
 derived_columns:
   customer_id: 'customer_id'
-  source:'source'
 hashed_columns:
   customer_hk: 'customer_id'
  {%- endset -%}
