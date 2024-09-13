@@ -1,15 +1,49 @@
-Welcome to your new dbt project!
+### Pre-requisities:
+- Create Snowflake trial account 
 
-### Using the starter project
+- Create Github repository to store and maintain a DBT code 
 
-Try running the following commands:
-- dbt run
-- dbt test
+- Create the DBT Cloud IDE account and establish coonection with Snowflake and github repository.
 
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [dbt community](https://getdbt.com/community) to learn from other analytics engineers
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+
+### Created and loaded the source tables with raw data in snowflake:
+
+analytics.PANKAJFORSNOWFLAKE19.raw_customers
+analytics.PANKAJFORSNOWFLAKE19.raw_orders
+
+### DBT Models creation and override default schema:
+
+- Created the below DBT models, yml and md files.
+stg_customers.sql
+stg_orders.sql
+hub_customer.sql
+link_customer_order.sql
+sat_customer.sql
+sources.yml
+schema.yml
+  
+### Incremental models:
+Models were created to load the data in incremental way based on unique key columns and it will check for rows created or modified since the last time dbt ran this model.
+
+### Push the dbt changes to github repository
+All the DBT model code is pushe dto the git repository
+
+###Environment Set Up to run the DBT jobs
+A environment named 'Production' is creatde to run the DBT jobs
+
+##Create DBT jobs
+DBt jobs Staging(Run the stagging models) and DataVault(run the hub/link/satellite models)
+
+### DBT log:
+
+All the logs are readily available for each run the job logs for DBT.
+
+### DBT tests:
+
+unique andnot-null tests are performed on hub and satellite models.
+
+### DBT Document generation:
+
+Documentation genaration is taken care while running the DBT jobs from the Production environment.
+

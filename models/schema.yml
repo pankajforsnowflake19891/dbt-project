@@ -4,7 +4,16 @@ models:
   - name: hub_customer
     description: One record per customer
     columns:
-      - name: customer_id
+      - name: customer_hk
+        description: Primary key
+        data_tests:
+          - unique
+          - not_null
+  
+  - name: sat_customer
+    description: One record per customer
+    columns:
+      - name: customer_hk
         description: Primary key
         data_tests:
           - unique
