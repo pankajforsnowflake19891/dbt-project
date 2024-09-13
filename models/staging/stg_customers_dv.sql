@@ -4,8 +4,7 @@ derived_columns:
   customer_id: 'customer_id'
 hashed_columns:
   customer_hk: 'customer_id'
-
-CUSTOMER_HASHDIFF:
+  CUSTOMER_HASHDIFF:
     is_hashdiff: true
     columns:
       - 'CUSTOMER_NAME'
