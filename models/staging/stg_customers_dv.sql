@@ -3,7 +3,7 @@ source_model: 'stg_customers'
 derived_columns:
   customer_id: 'customer_id'
 hashed_columns:
-  customer_id: 'customer_hk'
+  customer_hk: 'customer_id'
  {%- endset -%}
 
 {% set metadata_dict = fromyaml(yaml_metadata) %}
