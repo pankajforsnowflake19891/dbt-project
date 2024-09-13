@@ -14,7 +14,7 @@ analytics.PANKAJFORSNOWFLAKE19.raw_orders
 
 ### DBT Models creation and override default schema:
 
-- Created the below DBT models, yml and md files.
+- Created the below DBT models, yml and md files for DataVault implementation.
 stg_customers.sql
 stg_orders.sql
 hub_customer.sql
@@ -22,6 +22,19 @@ link_customer_order.sql
 sat_customer.sql
 sources.yml
 schema.yml
+
+- Created below dbt models for DataVault implementation using automate_dv package
+stg_customers.sql
+stg_orders.sql
+stg_customers_dv.sql
+stg_orders_dv.sql
+hub_customer_dv.sql
+link_customer_order_dv.sql
+sat_customer_dv.sql
+sources.yml
+schema.yml
+
+
   
 ### Incremental models:
 Models were created to load the data in incremental way based on unique key columns and it will check for rows created or modified since the last time dbt ran this model.
