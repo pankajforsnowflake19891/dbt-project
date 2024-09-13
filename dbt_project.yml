@@ -42,3 +42,6 @@ models:
     staging:
     +materialized: view
 
+vars:
+  load_date: '1992-01-08'
+
