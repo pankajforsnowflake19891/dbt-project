@@ -1,0 +1,24 @@
+version: 2
+models:
+  - name: hub_customer
+    description: '{{doc("hub_customer ")}}'
+    config:
+      tags: ['Refresh=Daily']
+      meta:
+        data classification: 'Internal'
+        natural key: 'customer_id'
+        primary keys: 'customer_HK'
+        refresh interval: 'Refresh=Daily'
+    columns:
+      - name: customer_HK
+        description: '{{doc("customer_HK_inhub_customer")}}'
+        tests:
+          - not_null
+          - unique
+      - name: customer_id
+        description: '{{doc("customer_id_in_hub_customer")}}'
+      - name: load_dts
+        description: '{{doc("load_dts_in_hub_customer")}}'
+      - name: source
+        description: '{{doc("source_in_hub_customer")}}'
+     
