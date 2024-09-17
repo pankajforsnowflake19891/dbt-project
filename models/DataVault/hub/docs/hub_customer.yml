@@ -1,7 +1,7 @@
 version: 2
 models:
-  - name: hub_customer
-    description: '{{doc("hub_customer ")}}'
+  - name: hub_customerforhub
+    description: '{{doc("hub_customerforhub ")}}'
     config:
       tags: ['Refresh=Daily']
       meta:
@@ -11,14 +11,14 @@ models:
         refresh interval: 'Refresh=Daily'
     columns:
       - name: customer_HK
-        description: '{{doc("customer_HK_inhub_customer")}}'
+        description: '{{doc("customer_HK_in hub_customerforhub")}}'
         tests:
           - not_null
           - unique
       - name: customer_id
-        description: '{{doc("customer_id_in_hub_customer")}}'
+        description: '{{doc("customer_id_in_hub_customerforhub")}}'
       - name: load_dts
-        description: '{{doc("load_dts_in_hub_customer")}}'
+        description: '{{doc("load_dts_in_hub_customerforhub")}}'
       - name: source
-        description: '{{doc("source_in_hub_customer")}}'
+        description: '{{doc("source_in_hub_customerforhub")}}'
      
